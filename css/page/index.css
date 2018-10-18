@@ -1,0 +1,59 @@
+
+body{
+    background-color: #efefef;
+}
+/*博客摘要字体*/
+p{
+    color: #797b7c;
+}
+/*导航栏*/
+.head{
+    background-color: black;
+    height: 100px;
+}
+/*主体部分*/
+/*轮播照片*/
+.mainImg{
+    background-color: red;
+    height: 400px;
+}
+/*主体*/
+.main{
+    margin-top: 15px;
+}
+/*博客简要展示*/
+.blogBrief{
+    height: 200px;
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 20px 15px 20px 0px;
+}
+/*.blogBrief btn{*/
+    /*margin-right: 0px !important;*/
+/*}*/
+.forpage{
+    margin: auto;
+}
+/*主体右部词条展示*/
+.rank{
+    padding-left: 30px;
+}
+.hotblog{
+    height: 250px;
+    background-color: blueviolet;
+}
+.hottag{
+    height: 200px;
+    background-color: yellow;
+}
+
+.hotblogger{
+    height: 250px;
+    background-color: black;
+}
+
+/*foot针对底部备案地址申明*/
+.foot{
+    height: 100px;
+    background-color: black;
+}
