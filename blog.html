@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客详情</title>
+    <link rel="icon" href="image/1.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="image/1.ico" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/page/blog.css">
+    <link rel="stylesheet" href="css/conmen.css">
+</head>
+<body>
+<!--导航栏-->
+<div class="head container-fluid">
+    <nav class="container headcontent navbar navbar-expand-sm navbar-dark">
+        <img src="image/logo.png" alt="" class="logo">&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">最新</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">最热</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">待定</a>
+            </li>
+        </ul>
+        <div class="input-group  col-md-4 search">
+            <input type="text" class="form-control "><button class="input-group-addon btn text-white ">搜索</button>
+        </div>
+
+        <div class="dropdown personEdit">
+            <i class="iconfont icon-person text-white dropdown-toggle"  data-toggle="dropdown"></i>
+            <div class="dropdown-menu ">
+                <a class="dropdown-item" href="personInfo.html">个人信息</a>
+                <a class="dropdown-item" href="#">设置</a>
+                <a class="dropdown-item" href="#">写博客</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">退出</a>
+            </div>
+
+        </div>
+        <span class="text-white personname">赵宇的博客</span>
+    </nav>
+
+</div>
+<!--主体-->
+<div class="content container">
+    <div class="row">
+        <!--博客正文-->
+        <div class="blogInfo col-md-8 bg-white">
+            <!--显示博客-->
+            <div class="row"></div>
+            <hr>
+            <!--写评轮-->
+            <div class="row">
+                <div  class="col-md-12">
+                    <form role="form">
+                        <div class="form-group">
+                            <textarea id="comment" class="form-control" rows="1" >想对作者说点什么...</textarea>
+                            <button class="btn btn-sm btn-success float-right">发表评论</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--评论列表-->
+            <div class="row">
+                <div  class="col-md-12">
+                    <table class="table">
+                        <tr style="border-bottom: 1px dashed #eee8d5">
+                            <td>
+                                <img src="holder.js/60x60" class="rounded-circle">&nbsp;&nbsp;&nbsp;<span>赵宇</span><span>:</span><span>万里长征刚开始，感谢分享</span><span class="text-info">(19秒前&nbsp;&nbsp;&nbsp;#21楼)</span>
+                            </td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed #eee8d5">
+                            <td>
+                                <img src="holder.js/60x60" class="rounded-circle">&nbsp;&nbsp;&nbsp;<span>赵宇</span><span>:</span><span>万里长征刚开始，感谢分享</span><span class="text-info">(19秒前&nbsp;&nbsp;&nbsp;#21楼)</span>
+                            </td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed #eee8d5">
+                            <td>
+                                <img src="holder.js/60x60" class="rounded-circle">&nbsp;&nbsp;&nbsp;<span>赵宇</span><span>:</span><span>万里长征刚开始，感谢分享</span><span class="text-info">(19秒前&nbsp;&nbsp;&nbsp;#21楼)</span>
+                            </td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed #eee8d5">
+                            <td>
+                                <img src="holder.js/60x60" class="rounded-circle">&nbsp;&nbsp;&nbsp;<span>赵宇</span><span>:</span><span>万里长征刚开始，感谢分享</span><span class="text-info">(19秒前&nbsp;&nbsp;&nbsp;#21楼)</span>
+                            </td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed #eee8d5">
+                            <td>
+                                <img src="holder.js/60x60" class="rounded-circle">&nbsp;&nbsp;&nbsp;<span>赵宇</span><span>:</span><span>万里长征刚开始，感谢分享</span><span class="text-info">(19秒前&nbsp;&nbsp;&nbsp;#21楼)</span>
+                            </td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed #eee8d5">
+                            <td>
+                                <img src="holder.js/60x60" class="rounded-circle">&nbsp;&nbsp;&nbsp;<span>赵宇</span><span>:</span><span>万里长征刚开始，感谢分享</span><span class="text-info">(19秒前&nbsp;&nbsp;&nbsp;#21楼)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <a href="" class="readHot">查看热评</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--词条部分-->
+        <div class="blogEntry col-md-4 " >
+            <div class="row bg-white">
+                <!--头像名称-->
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="holder.js/80x80" class="rounded-circle">&nbsp;&nbsp;<span>赵宇</span>
+                        </div>
+                        <div class="attention col-md-6">
+                            <button class="btn btn-dark">关注</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bloggerInfo row text-danger">
+                        <div class="col-md-3">
+                            <p>创作</p>
+                            <span>123</span><span>篇</span>
+                        </div>
+                        <div class="col-md-3">
+                            <p>粉丝</p>
+                            <span>123</span>
+                        </div>
+                        <div class="col-md-3">
+                            <p>喜欢</p>
+                            <span>123</span>
+                        </div>
+                        <div class="col-md-3">
+                            <p>评论</p>
+                            <span>123</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <p><span>等级</span><i></i>7</p>
+                            <p><span>积分</span><i></i><span>10000</span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><span>访问</span><span>1111</span></p>
+                            <p><span>排名</span><span>1</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--标签-->
+            <div class="row bg-white">
+                    <div class="hottag col-md-12">
+                        <div class="hottagName">
+                            <i class="iconfont icon-biaoqian"></i><span>标签</span>
+                        </div>
+                        <span class="badge badge-success"><a href="#" class="text-white">java</a></span>
+                        <span class="badge badge-danger"><a href="#" class="text-white">危险标签</a></span>
+                        <span class="badge badge-success"><a href="#" class="text-white">html</a></span>
+                        <span class="badge badge-danger"><a href="#" class="text-white">css3</a></span>
+                        <span class="badge badge-success"><a href="#" class="text-white">java</a></span>
+                        <span class="badge badge-danger"><a href="#" class="text-white">危险标签</a></span>
+                        <span class="badge badge-success"><a href="#" class="text-white">html</a></span>
+                        <span class="badge badge-danger"><a href="#" class="text-white">css3</a></span>
+                    </div>
+            </div>
+            <!--热门博主-->
+            <div class="row bg-white">
+                <div class="hotblogger col-md-12">
+                    <div class="hottagName"><i class="iconfont icon-wodedamaijihuo"></i>&nbsp;&nbsp;<span>热门博主</span></div>
+                    <img src="holder.js/60x60" class="rounded-circle">
+                    <img src="holder.js/60x60" class="rounded-circle">
+                    <img src="holder.js/60x60" class="rounded-circle">
+                    <img src="holder.js/60x60" class="rounded-circle">
+                    <img src="holder.js/60x60" class="rounded-circle">
+                    <img src="holder.js/60x60" class="rounded-circle">
+                    <img src="holder.js/60x60" class="rounded-circle">
+                    <img src="holder.js/60x60" class="rounded-circle">
+                    <img src="holder.js/60x60" class="rounded-circle">
+                    <img src="holder.js/60x60" class="rounded-circle">
+                    <div></div>
+                </div>
+            </div>
+            <!--关注我-->
+            <div class="row bg-white">
+                <div class="hotGuanzhu col-md-12 text-center">
+                    <div class="hottagName text-left"><i class="iconfont icon-wodedamaijihuo"></i>&nbsp;&nbsp;<span>关注我</span></div>
+                    <img src="holder.js/200x200">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--地址及备案申明-->
+<div class="foot container-fluid text-center">
+    <p class="quanxian"><span class="text-white ">Copyright © 2018 Adobe 11she326.cn All Rights Reserved.射洪吴彦祖 版权所有,保留一切权利</span></p>
+    <p class="beian"><span class="text-white">蜀ICP备18027826号</span></p>
+</div>
+<script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/holder.js" type="text/javascript"></script>
+<script src="js/conmen.js" type="text/javascript"></script>
+<script src="js/page/blog.js" type="text/javascript"></script>
+</body>
+</html>

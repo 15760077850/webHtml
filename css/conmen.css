@@ -52,7 +52,6 @@ body{
 
 /*foot针对底部备案地址申明*/
 .foot{
-    height:60px;
     background-color: black;
     position: relative;
     bottom: 0px;
