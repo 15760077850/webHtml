@@ -1,13 +1,15 @@
 $(function() {
     //加载editor编辑器
-    editormd("test-editormd", {
+    //初始化编辑器
+    var myEditor;
+    myEditor=editormd("test-editormd", {
         placeholder:"默认显示的文字",
         width: "100%",
         height: 740,
         path : 'editor/lib/',
-        theme : "white",//工具栏主题
-        previewTheme : "white",//预览主题
-        editorTheme : "white",//编辑主题
+        // // theme : "eclipse",//工具栏主题
+        // previewTheme : "white",//预览主题
+        // editorTheme : "white",//编辑主题
         codeFold : true,
         //syncScrolling : false,
         saveHTMLToTextarea : true,    // 保存 HTML 到 Textarea
@@ -40,11 +42,22 @@ $(function() {
             //this.width("100%");
             //this.height(480);
             //this.resize("100%", 640);
+        },
+        //控制全屏的显示
+        onfullscreen : function() {
+            $(".head,.foot,.edit,.allcategory,.alltag").hide();
+        },
+        onfullscreenExit : function() {
+            $(".head,.foot,.edit,.allcategory,.alltag").show();
         }
     });
-/*
-* 添加标签
-* */
+
+    //获取编辑器内容
+    // var blogcontent = encodeURIComponent(myEditor.getMarkdown());
+
+    /*
+    * 添加标签
+    * */
     $("#addTag").click(function () {
         $("#addTag").before("<span><input type=\"text\" class=\"tag\"><i class=\"deleteTag iconfont icon-shanchu\"></i>&nbsp;</span>");
     })

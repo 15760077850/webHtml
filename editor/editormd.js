@@ -70,7 +70,7 @@
             "h1", "h2", "h3", "h4", "h5", "h6", "|", 
             "list-ul", "list-ol", "hr", "|",
             "link", "reference-link", "image", "code", "preformatted-text", "code-block", "table", "datetime", "emoji", "html-entities", "pagebreak", "|",
-            "goto-line", "watch", "preview", "clear", "search", "|",
+            "goto-line", "watch", "preview", "fullscreen", "clear", "search", "|",
             "help", "info"
         ],
         simple : [
@@ -78,7 +78,7 @@
             "bold", "del", "italic", "quote", "uppercase", "lowercase", "|", 
             "h1", "h2", "h3", "h4", "h5", "h6", "|", 
             "list-ul", "list-ol", "hr", "|",
-            "watch", "preview", "|",
+            "watch", "preview", "fullscreen", "|",
             "help", "info"
         ],
         mini : [
@@ -219,6 +219,7 @@
             unwatch          : "fa-eye",
             preview          : "fa-desktop",
             search           : "fa-search",
+            fullscreen       : "fa-arrows-alt",
             clear            : "fa-eraser",
             help             : "fa-question-circle",
             info             : "fa-info-circle"
@@ -263,6 +264,7 @@
                 watch            : "关闭实时预览",
                 unwatch          : "开启实时预览",
                 preview          : "全窗口预览HTML（按 Shift + ESC还原）",
+                fullscreen       : "全屏（按ESC还原）",
                 clear            : "清空",
                 search           : "搜索",
                 help             : "使用帮助",
@@ -340,6 +342,7 @@
             watching   : false,
             loaded     : false,
             preview    : false,
+            fullscreen : false
         },
         
         /**
