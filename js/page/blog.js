@@ -36,23 +36,24 @@ $(function () {
      * 控制右侧词条
      */
 
-        // $(window).scroll(function () {
-        //     var top=$("html,body").scrollTop();
-        //     if(top>1000){
-        //         $("#blogEntry").addClass("blogEntry2");
-        //     }else{
-        //         $("#blogEntry").removeClass("blogEntry2")
-        //     }
-        // })
-    //
+        $(window).scroll(function () {
 
-    $(window).scroll(function () {
-        var top=$("html,body").scrollTop();
-        console.log(top);
-        if(top>=700){
-            $(".blogEntry").css("margin-top",700);
-        }
-    })
+            var top=$("html,body").scrollTop();
+            if(top>900){
+                $("#blogEntry").addClass("blogEntry2");
+            }else{
+                $("#blogEntry").removeClass("blogEntry2")
+            }
+        })
+    //
+    //
+    // $(window).scroll(function () {
+    //     var top=$("html,body").scrollTop();
+    //     console.log(top);
+    //     if(top>=700){
+    //         $(".blogEntry").css("margin-top",700);
+    //     }
+    // })
 
 
 

@@ -11,6 +11,14 @@
 .blogEntry>.row{
     margin-bottom: 15px;
 }
+.blogEntry2{
+    position:fixed;
+    bottom:0px;
+    top:auto;
+    right: 190px;
+    width: 380px;
+    z-index:998;
+}
 .attention{
     position: relative;
 }
@@ -51,4 +59,12 @@
 }
 .yongyong{
     position: relative;
+}
+.icon-quanping1{
+    font-size: 30px;
+    opacity: 0.1;
+    position: fixed;
+    top:100px;
+    left:60%;
+    z-index: 999;
 }
